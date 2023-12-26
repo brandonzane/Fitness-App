@@ -47,7 +47,7 @@ export default function App() {
             paddingVertical: 5,
             height: 70,
           },
-          tabBarActiveTintColor: "#12E195",
+          tabBarActiveTintColor: "#008080",
           tabBarInactiveTintColor: "gray",
         })}
       >
@@ -59,7 +59,7 @@ export default function App() {
   }
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name="TabNav"
           component={TabNavigator}
